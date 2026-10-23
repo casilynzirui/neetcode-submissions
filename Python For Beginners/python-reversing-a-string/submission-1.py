@@ -1,5 +1,10 @@
 def reverse_string(input_string: str) -> str:
-    return input_string[::-1]
+    reversed_string = ""
+
+    for char in input_string:
+        reversed_string = char + reversed_string
+
+    return reversed_string
 
 # do not modify below this line
 print(reverse_string("NeetCode"))
